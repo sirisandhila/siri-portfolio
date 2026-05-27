@@ -8,7 +8,6 @@ const stats = [
   { label: "Projects Completed", value: 5, suffix: "+" },
   { label: "Technologies", value: 15, suffix: "+" },
   { label: "Certifications", value: 5, suffix: "+" },
-  { label: "CGPA (10th)", value: 10, suffix: "" },
 ]
 
 const journey = [
