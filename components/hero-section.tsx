@@ -82,10 +82,13 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
           >
-            <MagneticButton variant="primary">
-              <Download className="w-4 h-4" />
-              Download Resume
-            </MagneticButton>
+            <MagneticButton
+  variant="primary"
+  href="/siri resume.pdf"
+>
+  <Download className="w-4 h-4" />
+  Download Resume
+</MagneticButton>
             <MagneticButton variant="outline" href="#projects">
               View Projects
             </MagneticButton>
