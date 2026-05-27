@@ -31,14 +31,14 @@ export function HeroSection() {
       <Hero3DScene />
       
       {/* Content */}
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 min-h-screen flex items-center">
+       <div className="max-w-5xl mx-auto text-center lg:text-left">
           {/* Greeting Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8"
+           className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-10 mt-12"
           >
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm text-muted-foreground">B.E in AI & Machine Learning</span>
@@ -49,10 +49,10 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-balance"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight"
           >
             <span className="text-foreground">{"Hi, I'm "}</span>
-            <span className="gradient-text text-glow">Siri Sandhila</span>
+            <span className="gradient-text">Siri Sandhila</span>
           </motion.h1>
 
           {/* Typing Animation */}
