@@ -135,7 +135,7 @@ export function HeroSection() {
 
               <div className="relative w-72 h-72 lg:w-[420px] lg:h-[420px] rounded-full overflow-hidden backdrop-blur-xl bg-white/5 p-2 border border-white/10 shadow-2xl">
                 <Image
-                  src="/profile.jpeg"
+                  src="/siri pic.jpeg"
                   alt="Siri Sandhila"
                   fill
                   className="object-cover hover:scale-105 transition duration-700"
