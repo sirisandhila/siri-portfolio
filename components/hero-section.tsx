@@ -134,7 +134,7 @@ export function HeroSection() {
                   transition={{ delay: 0.6 + index * 0.1 }}
                   whileHover={{ scale: 1.1, y: -2 }}
                   className="px-4 py-2 rounded-full glass-card text-sm font-medium hover-glow cursor-default"
-                  style={{ borderColor: `${tech.color}30` }}
+                  style={{ borderColor: tech.color + "30" }}
                 >
                   {tech.name}
                 </motion.div>
