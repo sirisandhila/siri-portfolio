@@ -1,4 +1,3 @@
-```tsx
 "use client"
 
 import { motion } from "framer-motion"
@@ -27,7 +26,6 @@ const techStack = [
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-
       {/* Aurora Background */}
       <div className="absolute inset-0 aurora-bg" />
 
@@ -35,13 +33,10 @@ export function HeroSection() {
       <Hero3DScene />
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 min-h-screen flex items-center w-full">
-
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 min-h-screen flex items-center">
         <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
-
           {/* LEFT CONTENT */}
           <div className="text-center lg:text-left">
-
             {/* Greeting Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -102,18 +97,12 @@ export function HeroSection() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-6 mb-16"
             >
-              <MagneticButton
-                variant="primary"
-                href="/resume.pdf"
-              >
+              <MagneticButton variant="primary" href="/resume.pdf">
                 <Download className="w-4 h-4" />
                 Download Resume
               </MagneticButton>
 
-              <MagneticButton
-                variant="outline"
-                href="#projects"
-              >
+              <MagneticButton variant="outline" href="#projects">
                 View Projects
               </MagneticButton>
             </motion.div>
@@ -137,26 +126,24 @@ export function HeroSection() {
                   transition={{ delay: 0.6 + index * 0.1 }}
                   whileHover={{ scale: 1.1, y: -2 }}
                   className="px-4 py-2 rounded-full glass-card text-sm font-medium hover-glow cursor-default"
-                  style={{ borderColor: tech.color + "30" }}
+                  style={{
+                    borderColor: tech.color + "30",
+                  }}
                 >
                   {tech.name}
                 </motion.div>
               ))}
             </motion.div>
-
           </div>
 
           {/* RIGHT IMAGE */}
           <div className="relative flex justify-center">
-
             <div className="relative">
-
               {/* Glow Background */}
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 blur-3xl opacity-30 rounded-full" />
 
               {/* Profile Image */}
               <div className="relative w-72 h-72 lg:w-[420px] lg:h-[420px] rounded-full overflow-hidden backdrop-blur-xl bg-white/5 p-2 border border-white/10 shadow-2xl">
-
                 <Image
                   src="/profile.jpeg"
                   alt="Siri Sandhila"
@@ -164,15 +151,10 @@ export function HeroSection() {
                   className="object-cover hover:scale-105 transition duration-700"
                   priority
                 />
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
 
       {/* Scroll Indicator */}
@@ -188,15 +170,11 @@ export function HeroSection() {
           transition={{ duration: 1.5, repeat: Infinity }}
           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
         >
-          <span className="text-sm">
-            Scroll Down
-          </span>
+          <span className="text-sm">Scroll Down</span>
 
           <ArrowDown className="w-5 h-5" />
         </motion.a>
       </motion.div>
-
     </section>
   )
 }
-```
