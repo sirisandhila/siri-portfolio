@@ -1,5 +1,4 @@
 "use client"
-
 import { ParticlesBackground } from "@/components/particles-background"
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
@@ -18,16 +17,16 @@ export default function Home() {
     <main className="relative min-h-screen overflow-x-hidden">
       {/* Background Effects */}
       <ParticlesBackground />
-      
+
       {/* Custom Cursor */}
       <CursorEffect />
-      
+
       {/* Scroll Progress */}
       <ScrollProgress />
-      
+
       {/* Navigation */}
       <Navigation />
-      
+
       {/* Sections */}
       <HeroSection />
       <FeaturesSection />
@@ -36,7 +35,7 @@ export default function Home() {
       <ProjectsSection />
       <ExperienceSection />
       <ContactSection />
-      
+
       {/* Footer */}
       <Footer />
     </main>
