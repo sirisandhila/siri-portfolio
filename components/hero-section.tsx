@@ -62,7 +62,6 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                   Siri Sandhila
@@ -72,7 +71,6 @@ export function HeroSection() {
               <h2 className="text-2xl md:text-4xl font-semibold text-white mb-6">
                 AI & ML Student
               </h2>
-
             </motion.div>
 
             {/* Typing Animation */}
@@ -104,7 +102,6 @@ export function HeroSection() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-6 mb-16"
             >
-
               <MagneticButton
                 variant="primary"
                 href="/resume.pdf"
@@ -119,7 +116,6 @@ export function HeroSection() {
               >
                 View Projects
               </MagneticButton>
-
             </motion.div>
 
             {/* Tech Stack */}
@@ -129,7 +125,6 @@ export function HeroSection() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-10"
             >
-
               <span className="text-sm text-muted-foreground">
                 Tech Stack:
               </span>
@@ -147,7 +142,6 @@ export function HeroSection() {
                   {tech.name}
                 </motion.div>
               ))}
-
             </motion.div>
 
           </div>
@@ -167,18 +161,15 @@ export function HeroSection() {
                   src="/profile.jpeg"
                   alt="Siri Sandhila"
                   fill
-                  className="object-cover object-top hover:scale-105 transition duration-700"
+                  className="object-cover hover:scale-105 transition duration-700"
                   priority
                 />
 
               </div>
-
             </div>
-
           </div>
 
         </div>
-
       </div>
 
       {/* Scroll Indicator */}
@@ -188,22 +179,18 @@ export function HeroSection() {
         transition={{ delay: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
       >
-
         <motion.a
           href="#about"
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
         >
-
           <span className="text-sm">
             Scroll Down
           </span>
 
           <ArrowDown className="w-5 h-5" />
-
         </motion.a>
-
       </motion.div>
 
     </section>
