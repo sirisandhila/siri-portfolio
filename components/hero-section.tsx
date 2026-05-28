@@ -26,18 +26,15 @@ const techStack = [
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Aurora Background */}
       <div className="absolute inset-0 aurora-bg" />
 
-      {/* 3D Scene */}
       <Hero3DScene />
 
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 min-h-screen flex items-center">
         <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
-          {/* LEFT CONTENT */}
+
           <div className="text-center lg:text-left">
-            {/* Greeting Badge */}
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -51,7 +48,6 @@ export function HeroSection() {
               </span>
             </motion.div>
 
-            {/* Name */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -68,7 +64,6 @@ export function HeroSection() {
               </h2>
             </motion.div>
 
-            {/* Typing Animation */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -78,7 +73,6 @@ export function HeroSection() {
               <TypingAnimation words={roles} />
             </motion.div>
 
-            {/* Description */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -90,7 +84,6 @@ export function HeroSection() {
               Currently pursuing B.E in AI & ML at NNRG, Hyderabad.
             </motion.p>
 
-            {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -107,7 +100,6 @@ export function HeroSection() {
               </MagneticButton>
             </motion.div>
 
-            {/* Tech Stack */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -136,13 +128,11 @@ export function HeroSection() {
             </motion.div>
           </div>
 
-          {/* RIGHT IMAGE */}
           <div className="relative flex justify-center">
             <div className="relative">
-              {/* Glow Background */}
+
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 blur-3xl opacity-30 rounded-full" />
 
-              {/* Profile Image */}
               <div className="relative w-72 h-72 lg:w-[420px] lg:h-[420px] rounded-full overflow-hidden backdrop-blur-xl bg-white/5 p-2 border border-white/10 shadow-2xl">
                 <Image
                   src="/profile.jpeg"
@@ -154,10 +144,10 @@ export function HeroSection() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -170,7 +160,9 @@ export function HeroSection() {
           transition={{ duration: 1.5, repeat: Infinity }}
           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
         >
-          <span className="text-sm">Scroll Down</span>
+          <span className="text-sm">
+            Scroll Down
+          </span>
 
           <ArrowDown className="w-5 h-5" />
         </motion.a>
