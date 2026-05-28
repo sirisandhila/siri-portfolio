@@ -117,7 +117,7 @@ export function HeroSection() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.6 + index * 0.1 }}
                   whileHover={{ scale: 1.1, y: -2 }}
-                  className="px-4 py-2 rounded-full glass-card text-sm font-medium hover-glow cursor-default"
+                  className="px-4 py-2 squared-full glass-card text-sm font-medium hover-glow cursor-default"
                   style={{
                     borderColor: tech.color + "30",
                   }}
@@ -131,9 +131,9 @@ export function HeroSection() {
           <div className="relative flex justify-center">
             <div className="relative">
 
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 blur-3xl opacity-30 rounded-full" />
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 blur-3xl opacity-30 squared-full" />
 
-              <div className="relative w-72 h-72 lg:w-[420px] lg:h-[420px] rounded-full overflow-hidden backdrop-blur-xl bg-white/5 p-2 border border-white/10 shadow-2xl">
+              <div className="relative w-72 h-72 lg:w-[420px] lg:h-[420px] squared-full overflow-hidden backdrop-blur-xl bg-white/5 p-2 border border-white/10 shadow-2xl">
                 <Image
                   src="/siri pic.jpeg"
                   alt="Siri Sandhila"
