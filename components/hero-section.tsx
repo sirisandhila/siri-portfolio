@@ -35,7 +35,7 @@ export function HeroSection() {
       <Hero3DScene />
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 min-h-screen flex items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 min-h-screen flex items-center w-full">
 
         <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
 
@@ -152,7 +152,7 @@ export function HeroSection() {
             <div className="relative">
 
               {/* Glow Background */}
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 blur-3xl opacity-30 rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 blur-3xl opacity-30 rounded-full" />
 
               {/* Profile Image */}
               <div className="relative w-72 h-72 lg:w-[420px] lg:h-[420px] rounded-full overflow-hidden backdrop-blur-xl bg-white/5 p-2 border border-white/10 shadow-2xl">
@@ -166,10 +166,13 @@ export function HeroSection() {
                 />
 
               </div>
+
             </div>
+
           </div>
 
         </div>
+
       </div>
 
       {/* Scroll Indicator */}
