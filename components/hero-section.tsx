@@ -157,7 +157,7 @@ export function HeroSection() {
                   src="/profile.jpeg"
                   alt="Siri Sandhila"
                   fill
-                  className="object-cover hover:scale-105 transition duration-700"
+               className="object-cover hover:scale-105 transition duration-700"
                   priority
                 />
               </div>
