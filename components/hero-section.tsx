@@ -33,7 +33,10 @@ export function HeroSection() {
       
       {/* Content */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 min-h-screen flex items-center">
-       <div className="max-w-5xl mx-auto text-center lg:text-left">
+      <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+  {/* LEFT CONTENT */}
+  <div className="text-center lg:text-left">
           {/* Greeting Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -119,6 +122,30 @@ export function HeroSection() {
           </motion.div>
         </div>
       </div>
+          </div>
+
+  {/* RIGHT IMAGE */}
+  <div className="relative flex justify-center">
+    <div className="relative">
+
+      {/* Glow Background */}
+      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 blur-3xl opacity-30 rounded-full"></div>
+
+      {/* Profile Image */}
+      <div className="relative w-72 h-72 lg:w-[420px] lg:h-[420px] rounded-full overflow-hidden backdrop-blur-xl bg-white/5 p-2">
+        <Image
+          src="/profile.jpeg"
+          alt="Siri Sandhila"
+          fill
+          className="object-cover hover:scale-105 transition duration-700"
+          priority
+        />
+      </div>
+
+    </div>
+  </div>
+
+</div>
 
       {/* Scroll Indicator */}
       <motion.div
