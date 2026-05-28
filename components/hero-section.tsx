@@ -5,6 +5,7 @@ import { Download, ArrowDown, Sparkles } from "lucide-react"
 import { TypingAnimation } from "./typing-animation"
 import { MagneticButton } from "./magnetic-button"
 import { Hero3DScene } from "./hero-3d-scene"
+import Image from "next/image"
 
 const roles = [
   "AI/ML Engineer",
