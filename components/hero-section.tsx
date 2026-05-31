@@ -90,7 +90,7 @@ export function HeroSection() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-6 mb-16"
             >
-              <MagneticButton variant="primary" href="/resume.pdf">
+              <MagneticButton variant="primary" href="#Download Resume">
                 <Download className="w-4 h-4" />
                 Download Resume
               </MagneticButton>
