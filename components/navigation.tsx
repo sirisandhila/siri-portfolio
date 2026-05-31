@@ -11,6 +11,7 @@ const navLinks = [
   { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
   { name: "Contact", href: "#contact" },
+  { name: "Download Resume", href: "#Download Resume" },
 ]
 
 const socialLinks = [
@@ -18,6 +19,7 @@ const socialLinks = [
   { icon: Linkedin, href: "https://www.linkedin.com/in/siri-sandhila-163870373/", label: "LinkedIn" },
   { icon: Instagram, href: "https://www.instagram.com/siri_sandhila/", label: "Instagram" },
   { icon: Mail, href: "mailto:sirisandhila0805@gmail.com", label: "Email" },
+  { icon: Download Resume, href: "https://drive.google.com/file/d/1g7PYPRaIc8UEab0-X1GsBzkkAE_4TR49/view?usp=drive_link", label: "Download Resume" }
 ]
 
 export function Navigation() {
